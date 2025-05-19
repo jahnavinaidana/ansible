@@ -10,7 +10,4 @@ tasks:
     ansible.builtin.service:
       name: nginx
       state: started #started/stopped/restarted
-  - name: enable nginx
-    ansible.builtin.service:
-      name: nginx
       enabled: yes #yes/no 
