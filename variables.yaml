@@ -1,0 +1,10 @@
+- name: variables
+  host: localhost
+  vars:
+    name: "jahnavi naidana"
+    role: "devops engineer"
+    time: "2 years"
+  tasks:
+    - name: print variables
+      ansible.builtin.debug:
+        msg: "Hi this {{name}} and I'm a {{trainer}} from last {{time}}."
