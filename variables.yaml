@@ -1,10 +1,10 @@
 - name: variables
-  host: localhost
+  hosts: localhost
   vars:
     name: "jahnavi naidana"
     role: "devops engineer"
     time: "2 years"
   tasks:
-    - name: print variables
-      ansible.builtin.debug:
-        msg: "Hi this {{name}} and I'm a {{trainer}} from last {{time}}."
+  - name: print variables
+    ansible.builtin.debug:
+     msg: "Hi this {{name}} and I'm a {{role}} from last {{time}}."
