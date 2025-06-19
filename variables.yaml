@@ -1,6 +1,6 @@
 - name: variables
   hosts: localhost
-  vars:
+  vars: #variable declaration
     myself: "jahnavi naidana"
     role: "devops engineer"
     time: "2 years"
