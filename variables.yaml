@@ -1,7 +1,7 @@
 - name: variables
   hosts: localhost
   vars:
-    name: "jahnavi naidana"
+    myself: "jahnavi naidana"
     role: "devops engineer"
     time: "2 years"
   tasks:
