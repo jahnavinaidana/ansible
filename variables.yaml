@@ -7,4 +7,4 @@
   tasks:
   - name: print variables
     ansible.builtin.debug:
-     msg: "Hi this {{name}} and I'm a {{role}} from last {{time}}."
+     msg: "Hi this {{myself}} and I'm a {{role}} from last {{time}}."
