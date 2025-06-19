@@ -1,0 +1,17 @@
+- name: variables
+  hosts: localhost
+  vars: #variable declaration
+    myself: "jahnavi naidana"
+    role: "devops engineer"
+    time: "2 years"
+    client: "western union"
+  tasks:
+  - name: print override information 
+    vars: #task level variables
+     time: "next 2 years"
+    ansible.builtin.debug:
+     msg: "Hi this {{myself}} and I'm a {{role}} from last {{time}} in {{client}}."
+
+  - name: print variables
+    ansible.builtin.debug:
+     msg: "Hi this {{myself}} and I'm a {{role}} from last {{time}} in {{client}}."
